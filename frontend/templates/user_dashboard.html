@@ -1,1 +1,23 @@
-ECHO is on.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>User Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+    </header>
+    <div class="container">
+        <h2>Registered Stores</h2>
+        <ul>
+            {% for store in stores %}
+                <li>{{ store.store_name }} - <a href="#">View</a></li>
+            {% endfor %}
+        </ul>
+        <!-- Functionality to upload documents and schedule prints can be added here -->
+    </div>
+</body>
+</html>
