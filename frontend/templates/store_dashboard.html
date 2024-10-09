@@ -1,1 +1,24 @@
-ECHO is on.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Store Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Store Dashboard</h1>
+    </header>
+    <div class="container">
+        <h2>Add Store Details</h2>
+        <form action="#" method="POST">
+            <input type="text" name="store_name" placeholder="Store Name" required>
+            <input type="text" name="location" placeholder="Location" required>
+            <input type="text" name="timings" placeholder="Timings" required>
+            <input type="submit" value="Add Store">
+        </form>
+        <!-- Additional functionality can be added here -->
+    </div>
+</body>
+</html>
