@@ -1,1 +1,18 @@
-ECHO is on.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Photo X</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Photo X</h1>
+    </header>
+    <div class="container">
+        <a href="{{ url_for('signup') }}">Sign Up</a> | 
+        <a href="{{ url_for('login') }}">Log In</a>
+    </div>
+</body>
+</html>
