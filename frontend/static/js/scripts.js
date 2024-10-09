@@ -1,1 +1,3 @@
-ECHO is on.
+document.addEventListener('DOMContentLoaded', () => {
+    // Add interactivity if needed
+});
