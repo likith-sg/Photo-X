@@ -1,1 +1,27 @@
-ECHO is on.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    <div class="container">
+        <form action="{{ url_for('signup') }}" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <label>
+                <input type="radio" name="user_type" value="store" required> Store
+            </label>
+            <label>
+                <input type="radio" name="user_type" value="user" required> User
+            </label>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>
